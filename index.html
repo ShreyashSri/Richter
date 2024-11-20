@@ -1,0 +1,82 @@
+<html>
+    <head>
+       <title>Vacant Project</title>
+        <link rel="stylesheet" href="Editing.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+      <div class="heading">
+       <h1>Richter</h1>
+        </div>
+        <div class="list">
+        <ul type="none">
+            <li class="a">Home</li>
+            <li class="a">Media</li>
+            <li class="a">Contact</li>
+            <li class="a"><a style="text-decoration: none; color: #BCB3B1"href="About%20Us.html">About Us</a></li>
+            <li class="a"><a style="text-decoration: none; color: #BCB3B1" href="Login Form.html">Login</a></li>
+        </ul>
+        </div>
+        <div class="carousel-container">
+            <button class="arrow left" onclick="scrollLeft()">&#8249;</button>
+            <div class="image-container" id="carousel">
+                <img src="Capture.PNG" alt="Image 1">
+                <img src="cap1.jpg" alt="Image 2">
+                <img src="cap2.jpg" alt="Image 3">
+                <img src="cap3.jpg" alt="Image 4">
+                <img src="cap4.jpg" alt="Image 5">
+                <img src="cap5.jpg" alt="Image 5">
+            </div>
+        <button class="arrow right" onclick="scrollRight()">&#8250;</button>
+      </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const carousel = document.getElementById('carousel');
+            const images = document.querySelectorAll('.image-container img');
+            let currentIndex = 0;
+
+            // Scroll left function
+            function scrollLeft() {
+                if (currentIndex > 0) {
+                    currentIndex--;
+                } else {
+                    currentIndex = images.length - 1;  // Loop to last image
+            }
+            updateCarouselPosition();
+        }
+
+        // Scroll right function
+        function scrollRight() {
+        if (currentIndex < images.length - 1) {
+            currentIndex++;
+        } else {
+            currentIndex = 0;  // Loop to first image
+        }
+        updateCarouselPosition();
+        }
+
+        // Update the carousel's position to show the current image
+        function updateCarouselPosition() {
+            const offset = -currentIndex * 100;  // Offset by 100% for each image
+            carousel.style.transform = `translateX(${offset}%)`;
+        }
+
+        // Attach the scroll functions to the arrow buttons
+        window.scrollLeft = scrollLeft;
+        window.scrollRight = scrollRight;
+  });
+    </script>
+        <footer>
+            <h9>&copy;Copyright 2020</h9><br><br>
+            <h9>All Rights are Reserved</h9><br><br>
+            <i class="fa fa-facebook-square"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i><br><br>
+            <li class="f">Home</li>
+            <li class="f">Media</li>
+            <li class="f">Contact</li>
+            <li class="f"><a style="text-decoration: none; color: #BCB3B1"href="About%20Us.html">About Us</a></li>
+            <li class="f"><a style="text-decoration: none; color: #BCB3B1" href="Login Form.html">Login</a></li>
+        </footer>
+    </body>
+</html>

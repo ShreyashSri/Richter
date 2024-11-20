@@ -1,0 +1,129 @@
+body{
+    background: linear-gradient(40deg,#ffffff ,#333333 )
+}
+.heading{
+    font-size: 30px;
+}
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Set a max width for the carousel */
+    height: 400px; /* Set a fixed height */
+    margin: auto;
+    overflow: hidden; /* Hide overflowing content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Image Container (flexbox for horizontal scroll) */
+.image-container {
+    display: flex;
+    transition: transform 0.3s ease-in-out; /* Smooth scrolling */
+}
+
+.image-container img {
+    max-width: 100%; /* Ensure images do not stretch beyond container width */
+    max-height: 100%; /* Ensure images do not exceed container height */
+    object-fit: contain; /* Maintain aspect ratio */
+    flex-shrink: 0; /* Prevent images from shrinking */
+}
+/* Arrow Buttons Styling */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    z-index: 100;
+    border-radius: 50%;
+}
+
+.arrow.left {
+    left: 10px;
+}
+
+.arrow.right {
+    right: 10px;
+}
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.real-img{
+    max-width: 100%;
+    max-height: 95vh; 
+    width: 100%;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background: #272424;
+}
+.a{
+    float: left;
+    display: block;
+    text-align: center;
+    color: #BCB3B1;
+    padding: 20px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.a:hover{
+    background: black;
+}
+.fa-facebook-square{
+    margin-right: 20px;
+    padding: 5px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.fa-instagram{
+    margin-right: 20px;
+    padding: 5px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.fa-twitter{
+    margin-right: 20px;
+    padding: 5px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.fa:hover{
+    background: black;
+}
+footer{
+    position: absolute;
+    text-align: center;
+    height: 30%;
+    width: 100%;
+    margin: 0px;
+    padding: 20px;
+    background: #272424;
+    color: #BCB3B1;
+}
+.f{
+    float: none;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+    transition-duration: 0.4s;
+}
+.f:hover{
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    .carousel-container {
+        width: 100%;
+    }
+
+    .image-container img {
+        width: 100%;
+    }
+}

@@ -1,0 +1,70 @@
+body{
+    background: linear-gradient(40deg,#ffffff ,#333333 )
+}
+h1{
+    font-size: 50px;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background: #272424;
+}
+.a{
+    float: left;
+    display: block;
+    text-align: center;
+    color: #BCB3B1;
+    padding: 20px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.a:hover{
+    background: black;
+}
+.body{
+    height: 100vh;
+    overflow: hidden;
+}
+.fa-facebook-square{
+    margin-right: 20px;
+    padding: 5px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.fa-instagram{
+    margin-right: 20px;
+    padding: 5px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.fa-twitter{
+    margin-right: 20px;
+    padding: 5px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.fa:hover{
+    background: black;
+}
+footer{
+    position: absolute;
+    text-align: center;
+    height: 30%;
+    width: 100%;
+    margin: 0px;
+    padding: 20px;
+    background: #272424;
+    color: #BCB3B1;
+}
+.f{
+    float: center;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+    transition-duration: 0.4s;
+}
+.f:hover{
+    text-decoration: underline;
+}
