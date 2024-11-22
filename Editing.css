@@ -1,5 +1,15 @@
-body{
-    background: linear-gradient(40deg,#ffffff ,#333333 )
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes the full viewport height */
+    margin: 0;
+    background: linear-gradient(40deg, #ffffff, #333333);
+}
+main {
+    flex: 1; /* Allow main content to grow */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically if needed */
 }
 .heading{
     font-size: 30px;
@@ -97,12 +107,8 @@ ul{
 .fa:hover{
     background: black;
 }
-footer{
-    position: absolute;
+footer {
     text-align: center;
-    height: 30%;
-    width: 100%;
-    margin: 0px;
     padding: 20px;
     background: #272424;
     color: #BCB3B1;
